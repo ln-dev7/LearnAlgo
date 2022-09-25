@@ -19,5 +19,11 @@ function binarySearch(tableau, numberToGuess) {
     }
     return null
 }
+
+const start = performance.now();
 const result = binarySearch(tableau, numberToGuess);
-console.log(result, numberOfTries);
+const end = performance.now();
+console.log("binary search time : ", end - start);
+console.log("result : ", result);
+
+// Complexity: O(log n)

@@ -10,5 +10,11 @@ function simpleSearch(tableau, numberToGuess) {
         }
     }
 }
+
+const start = performance.now();
 const result = simpleSearch(tableau, numberToGuess);
-console.log(result, numberOfTries);
+const end = performance.now();
+console.log("simple search time : ", end - start);
+console.log("result : ", result);
+
+// Complexity: O(n)
