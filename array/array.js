@@ -90,20 +90,29 @@ class MyArray {
 }
 
 const myarr = new MyArray();
+
 myarr.addItemAtBeginning(1);
 myarr.addItemAtBeginning(4);
 myarr.addItemAtBeginning(5);
 myarr.addItemAtBeginning(-1);
 console.log(myarr.value);
+
 myarr.addItemAtBeginning(2);
 console.log(myarr.value);
+
 myarr.addItemAtEnd(3);
 console.log(myarr.value);
+
 myarr.addItemAtPosition(4, 2);
 console.log(myarr.value);
+
 myarr.removeItemAtBeginning();
 console.log(myarr.value);
+
 myarr.removeItemAtEnd();
 console.log(myarr.value);
+
 myarr.removeItemAtPosition(3);
 console.log(myarr.value);
+
+console.log(myarr.value[2]);
